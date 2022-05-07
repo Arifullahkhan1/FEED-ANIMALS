@@ -8,7 +8,7 @@ interface IButtonProps{
 }
 
 export const FeedButton = (props: IButtonProps) => {
-    const millisInHour: number = 60*60*1000;
+    const millisInHour: number = 60*60*1000;// if we need it in secands the remove 60*60
     const [hoursElapsed, setHoursElapsed] = useState<Number>((new Date().getTime() - new Date(props.animal.lastFed).getTime())/ (millisInHour));
 
     useEffect(()=>{
