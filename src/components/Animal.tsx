@@ -58,7 +58,7 @@ export const Animal = () => {
                 <h2>({animal.latinName})</h2>
                 <Image url={animal.imageUrl} link="#" alt={animal.name}/>
                 <p>{animal.longDescription}</p>
-                {/* <FeedButton animal={animal} updateAnimal={setAnimal}></FeedButton> */}
+                {/* <FeedButton animal={animal} updateAnimal={setAnimal}></FeedButton> Donot need to show twice */}
             </div>);
     }
     
